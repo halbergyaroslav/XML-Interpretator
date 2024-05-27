@@ -1,0 +1,13 @@
+<program name="Example 3 in IPPeCode">
+<tac opcode="READINT" order="1">
+<dst type="variable">divider</dst>
+</tac>
+<tac opcode="DIV" order="2">
+<dst type="variable">res</dst>
+<src1 type="integer">10</src1>
+<src2 type="variable">divider</src2>
+</tac>
+<tac opcode="PRINT" order="3">
+<src1 type="variable">res</src1>
+</tac>
+</program>

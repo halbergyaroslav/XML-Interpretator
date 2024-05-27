@@ -1,0 +1,19 @@
+<program name="Example 2 in IPPeCode">
+<tac opcode="READINT" order="1">
+<dst type="variable">y</dst>
+</tac>
+<tac opcode="ADD" order="2">
+<dst type="variable">x1</dst>
+<src1 type="variable">y</src1>
+<src2 type="integer">10</src2>
+</tac>
+<tac opcode="PRINTLN" order="3">
+<src1 type="string">Hello</src1>
+</tac>
+<tac opcode="PRINT" order="4">
+<src1 type="string">World!</src1>
+</tac>
+<tac opcode="PRINTLN" order="5">
+<src1 type="variable">x1</src1>
+</tac>
+</program>

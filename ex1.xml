@@ -1,0 +1,28 @@
+<program name="Project introduction 1: Print numbers from 1 to 5 (using IPPeCode)">
+  <tac opcode="MOV" order="1">
+    <dst type="variable">n</dst>
+    <src1 type="integer">0</src1>
+  </tac>
+  <tac opcode="LABEL" order="2">
+    <dst type="label">@START</dst>
+  </tac>
+  <tac opcode="JUMPIFEQ" order="3">
+    <dst type="label">@END</dst>
+    <src1 type="variable">n</src1>
+    <src2 type="integer">5</src2>
+  </tac>
+  <tac opcode="ADD" order="4">
+    <dst type="variable">n</dst>
+    <src1 type="variable">n</src1>
+    <src2 type="integer">1</src2>
+  </tac>
+  <tac opcode="PRINT" order="5">
+    <src1 type="variable">n</src1>
+  </tac>
+  <tac opcode="JUMP" order="6">
+    <dst type="label">@START</dst>
+  </tac>
+  <tac opcode="LABEL" order="7">
+    <dst type="label">@END</dst>
+  </tac>
+</program> 
